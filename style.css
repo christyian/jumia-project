@@ -1,12 +1,18 @@
-html, body{
-    height: 100%;
+*{
+
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
 }
-body{
+
+.body{
+    min-height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    
 }
+
 header{
     background-color: #fff8ef;
     color: grey;
@@ -14,12 +20,9 @@ header{
     justify-content: space-between;
     margin: 0px;
     align-content: center;
+    padding: 0px 12rem;
 }
-.logo{
-    display: flex;
-    align-items: center;
-    padding-left: 250px;
-}
+
 .logo img{
     max-width: 200px;
     max-height: 100px;
@@ -27,7 +30,7 @@ header{
 nav ul.menu{
     list-style-type:none;
     padding-top: 30px;
-    padding-right: 150px;
+    /* padding-right: 150px; */
 
 }
 nav ul.menu li:hover{
@@ -37,9 +40,6 @@ nav ul.menu li:hover{
 nav {
     cursor: pointer;
 }
-
-
-
 
 nav ul.menu li{
     display: inline;
@@ -76,31 +76,24 @@ nav ul.menu li #button:hover{
 .container-1{
     background-color: #fff8ef;
     display: flex;
-    justify-content: center;
     flex-direction: row;
-}
-.container-1 #left-column{
-    flex: 1;
-    padding: 20px;
-    /* border: 1px solid black; */
+    padding: 4rem 12rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%
 
 }
-
-.container-1 #left-column img{
-    /* padding-left: 100px; */
-    /* max-width: 20px; */
-    /* max-height: 50%; */
-    padding-left: 300px;
-
+.left-column{
+    width: 50%;
 
 }
+
 .right-column{
-    flex: 1;
-    text-align: left;
-
+    width: 50%;
 }
+
 #h3{
-    padding: 0px 100px 0px 0px;
+    padding: 0px 0px 32px 0px;
     font-family: Asap, sans-serif;
     font-size: 40px;
     font-weight: bold;
@@ -108,21 +101,18 @@ nav ul.menu li #button:hover{
     
 }
 #p1{
-    padding-right: 400px;
+    padding-right: 98px;
     padding-top: 0%;
     padding-left: 0px;
     padding-bottom: 15px;
     color: grey;
     font-size: 20px;
-    line-height: 140%;
+    line-height: 30px;
     
 }
 
 .button{
     padding-left: 0%;
-    
-    
-
 }
 
 .button #learn-more:hover{
@@ -135,7 +125,6 @@ nav ul.menu li #button:hover{
     background-color: #fff8ef;
     border-radius: 12px;
     font-size: 14px;
-    /* text-decoration: none; */
     display: inline;
     color: #ff8800;
     text-align: center;
@@ -150,19 +139,18 @@ nav ul.menu li #button:hover{
 .container-2{
     display: flex;
     justify-content: space-between;
-    padding-left: 200px;
-    padding-right: 200px;
     padding-bottom: 100px;
-    /* margin: 50px; */
     grid-column-gap: 30px;
     color: grey;
     font-family: Asap, sans-serif;
+    padding: 0px 12rem;
 }
 
 h2{
-display: flex;
-justify-content: center;
-}
+    display: flex;
+    justify-content: center;
+    }
+
 .h2{
     font-size: 30px;
     padding-bottom: 30px;
@@ -187,67 +175,18 @@ justify-content: center;
     font-size: 18px;
     font-weight: bold;
     transition-duration: 0.3s;
-}
-.column1 img{
-    max-width: 100%;
-    max-height: 200px;
-}
-.column1 #cp1{
-    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
 }
 
-.column-2:hover{
-    background-color: white;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
+.content{
+    width: 300px;
+    padding: 16px 32px;
+    }
 
-.column-2{
-    background-color: #fff8ef;
-    border-radius: 25px;
-    text-align: center;
-    line-height: 140%;
-    font-size: 18px;
-    font-weight: bold;
-    transition-duration: 0.3s;
-}
-
-.column-2 img{
-    max-width: 100%;
-    max-height: 200px;
-}
-
-.column-2 #c2p1{
-    padding: 20px 40px;
-}
-
-.column-3:hover{
-    background-color: white;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-.column-3{
-    background-color: #fff8ef;
-    border-radius: 25px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 140%;
-    transition-duration: 0.3s;
-
-}
-.column-3 #c3p1{
-    padding: 20px 40px;
-}
 #cp2{
     color: #ff8800;
 }
-#c2p2{
-    color: #ff8800;
-}
-#c3p2{
-    color: #ff8800;
-}
-
 
 
 
